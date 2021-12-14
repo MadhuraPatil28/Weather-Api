@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+   
+}
+
+body{
+    
+    display: grid;
+    grid-template-columns: 5% auto 25%;
+    grid-template-rows: 15% auto auto;
+    grid-template-areas: "x y w"
+                         "x center  w"
+                         "x center w";
+    color: #192741;
+    
+    
+
+}
+
+header{
+  
+    grid-area: y;
+}
+
+.profile{
+    width: 65px;
+    height: 50px;
+    margin: 20px;
+}
+
+.left_side_name{
+    margin-left: 100px;
+    margin-top: -70px; 
+}
+
+#hello{
+    font-size: 20px;
+    margin-top: -75px;
+}
+
+#name{
+    margin-top: -24px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.right_side{
+    float: right;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: -40px;
+}
+
+
+.searchbar{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+    outline: none;
+    margin-top: -10px;
+
+}
+button{
+    width: 35px;
+    height: 35px;
+    margin: -10px 25px;
+    border-radius: 50%;
+    border-color:white;
+}
+.aside-left{
+    grid-area: x;
+    
+    height: 100vh;
+
+}
+    grid-area: x;
+    
+    height: 100vh;
+}
+
+.logo{
+    border-radius: 50%;
+    padding-top: 20px;
+}
+.aside-top img{
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+
+
+.btn_active{
+    background-color: orange;
+    border-radius: 0%;
+}
+
+
+
+.aside-mid{
+    margin-top: 15vh;
+}
+.
+
+
+.aside-lower{
+    position: absolute;
+    bottom: 30px;
+    justify-content: center;
+}
+
+main{
+    grid-area: center;
+}
+
+.main-upper{
+    display: flex;
+    height: 50%;
+}
+
+.card{
+    width: 50%;
+    margin: 20px;
+    padding: 30px;
+    margin-top: 0;
+}
+
+#card1{
+    background-image: url("img/card1.png") ;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.card-top{
+    height: 30%;
+
+}
+
+.white{
+    color: white;
+}
+
+.card-icon{
+    width: 50px;
+    height: 50px;
+  
+
+}
+
+.card-heading{
+    font-weight: bolder;
+    font-size: large;
+    margin-left: 80px;
+    margin-top: -50px;
+}
+
+.card-sub-heading{
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.card-mid{
+    height: 30%;
+    margin-top: -5px;
+}
+
+.card-mid-figure{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.card-mid-info{
+    margin-top: -30px;
+}
+
+.mini-card-mid{
+    background-color: white;
+    border-radius: 7px;
+    width: 10%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 100px;
+    margin-top: -50px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.card-lower{
+    height: 35%;
+    display: flex;
+    margin: 50px -20px;
+}
+
+.card-low{
+    border-radius: 20px;
+    margin: 0 10px;
+    width: 40%;
+    padding: 10px;
+}
+
+.pressure{
+    background-color: #192740;
+    color: white;
+}
+
+.pressure-h{
+    font-size: 11px;
+    margin-left: 28%;
+    margin-top: 8%;
+}
+
+.pressure-info{
+    font-weight: bolder;
+    margin-left: 21%;
+    margin-top: -15%;
+    font-size: larger;
+}
+
+.visibility-h{
+    font-size: 11px;
+    margin-left: 31%;
+    margin-top: 8%;
+}
+
+.visibility-info{
+    font-weight: bolder;
+    margin-left: 25%;
+    margin-top: -15%;
+    font-size: larger;
+}
+
+.visibility{
+    background-color: #cce16a;
+}
+
+.humadity{
+    background-color: white;
+}
+
+.humadity-h{
+    font-size: 11px;
+    margin-left: 27%;
+    margin-top: 8%;
+}
+
+.humadity-info{
+    font-weight: bolder;
+    margin-left: 33%;
+    margin-top: -15%;
+    font-size: larger;
+}
+
+
+#card2{
+    border-radius: 20px;
+    background-image: url("img/card2.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    
+}
+
+#wind-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+  
+    
+}
+#cloud-icon{
+    border-radius: 50%;
+    border-color: black;
+}
+
+#card-h-2{
+    margin-left: 80px;
+   
+}
+
+.box-AQI{
+    margin-left: 90px;
+    padding-left: 8px;
+    color: black;
+    background-color: darkgreen;
+    
+   
+}
+
+.card-lower-progress{
+    height: 10%;
+    padding: 40px;
+    background-color: white;
+    margin: 50px 0px;
+    border-radius: 20px;
+}
+
+.good{
+font-size: large;
+text-align: center;
+float: left;
+
+}
+.hazardous{
+    font-size: large;
+    text-align: right;
+    float: inline-start;
+}
+.progress-bar-striped{
+    background-color: orange;
+}
+
+
+
+.main-lower{
+    display: flex;
+    height: 50%;
+}
+
+
+.card-right{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.main-lower-card-left{
+    border-radius: 20px;
+    width: 70%;
+}
+
+.card-left{
+    float: right;
+    margin-top: -35px;
+}
+
+.line-graph-img{
+    width: 90%;
+    height: 160px;
+}
+
+.card-left-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 7px;
+   
+}
+
+.card-left ul{
+    display: inline;
+    list-style: none;
+}
+.card-left li{
+ list-style: none;
+list-style-type: none;
+display: inline;
+}
+
+.main-lower-card-right{
+    border-radius: 20px;
+    width: 30%;
+    margin: 20px;
+    background-image: url("img/card3.jpg") ;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    padding: 20px;
+}
+
+.main-lower-card-right-top-f{
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    
+}
+.main-lower-card-right-top-h{
+    color: white;
+    font-size: 18px;
+}
+
+.main-lower-card-right-bottom-h{
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top:110px;
+    color:white;
+}
+
+.main-lower-card-right-bottom-f{
+ 
+    bottom: 90px;
+    color:white;
+    
+}
+
+.aside-right{
+    background-color: #f7f7f7;
+    grid-area: w;
+}
+
+.aside-right-header{
+    border-bottom: 1px solid rgb(206, 206, 206);
+    margin: 30px;
+    height: 13%;
+}
+
+.day{
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+select{
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    padding: 7px;
+    background-color: #f7f7f7;
+    color: orange;
+    overflow: hidden;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.temp{
+    float: right;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #ff9d43;
+    margin-top: -40px;
+}
+
+.sun-graph{
+    height: 20%;
+    margin: 0 20px;
+}
+
+.sunrise{
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.uvi-card{
+    border-radius: 25px;
+    margin: 30px;
+    height: 10%;
+    background-color: #192741;
+    color: white;
+    padding: 10px 20px;
+}
+
+.sun{
+    width: 45px;
+    height: 45px;
+ 
+}
+
+.uvi{
+    margin-left: 70px;
+    margin-top: -45px;
+    font-weight: bolder;
+}
+
+.uvi-status{
+    margin-left: 130px;
+    margin-top: -35px;
+    background-color: #cbe16b;
+    color: black;
+    padding: 1px 6px ;
+    border-radius: 5px;
+    width: 23%;
+    font-size: 10px;
+}
+
+.uvi-info{
+    font-size: small;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+
+.prediction{
+    height: 35%;
+    margin: 20px;
+}
+
+.prediction-h{
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 20px;
+    color: #2e3748;
+}
+
+.prediction-cards{
+    height: 50px;
+    background-color: white;
+}
+
+#prediction-card-1{
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#prediction-card-2{
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.cloudy{
+    width: 50px;
+    height: 50px;
+}
+
+.date{
+    color: grey;
+    font-size: 12px;
+    margin-top: -42px;
+    margin-left: 80px;
+}
+
+.prediction-info{
+    font-style: 13px;
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.prediction-temp{
+    float: right;
+    margin-top: -48px;
+    margin-right: 10px;
+    color: #ff9d43;
+    font-weight: bolder;
+}
+
+.next{
+    border: none;
+    border-radius: 10px;
+    float: right;
+    width: 50%;
+    height: 45px;
+    margin-right: 10px;
+    background-color: #ff9d43;
+    color: white;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.next:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff9028;
+}
+
+
+
+
